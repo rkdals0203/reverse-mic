@@ -1,0 +1,64 @@
+name: reverse_mic
+description: 음성 녹음 및 역재생 앱 - 사용자가 자신의 목소리나 주변 소리를 녹음하고 역재생/속도·피치 조절/효과 적용을 통해 재미있게 경험할 수 있는 오디오 엔터테인먼트 앱
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI 및 상태 관리
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  
+  # 오디오 관련 패키지
+  audio_session: ^0.1.18
+  just_audio: ^0.9.36
+  just_audio_background: ^0.0.1-beta.11
+  record: ^5.0.4
+  path_provider: ^2.1.1
+  
+  # 파일 처리
+  file_picker: ^6.1.1
+  share_plus: ^7.2.1
+  permission_handler: ^11.1.0
+  
+  # 오디오 효과 및 처리
+  flutter_sound: ^9.2.13
+  audio_waveforms: ^1.0.5
+  
+  # UI 컴포넌트
+  flutter_slidable: ^3.0.1
+  lottie: ^2.7.0
+  
+  # 유틸리티
+  intl: ^0.18.1
+  path: ^1.8.3
+  
+  # 네트워크 및 URL 처리
+  http: ^1.1.0
+  url_launcher: ^6.2.1
+  
+  # 오디오 다운로드 및 처리
+  dio: ^5.3.2
+  mime: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+  
